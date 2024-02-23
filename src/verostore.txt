@@ -1,0 +1,16 @@
+import axios from "axios";
+
+const getVeroStore = async (ums, dois, tres, res) => {
+  const response = await axios.post(
+    "https://pdv.verostore.com.br/apiDeviceLink.php",
+    {
+      pdvToken: "660D1A54504070D5",
+      merchantDocumentNumber: 92702067000196,
+      deviceToken: "ADFAA085A24C1029",
+    }
+  );
+  const verostore = response.data;
+  console.log(verostore);
+};
+
+getVeroStore(ums, dois, tres, res);
