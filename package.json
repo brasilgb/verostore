@@ -6,6 +6,7 @@
   "type": "commonjs",
   "author": "Anderson Brasil",
   "license": "Private",
+  "private": true,
   "scripts": {
     "start": "ts-node src/server.ts",
     "dev": "nodemon --exec ts-node src/server.ts",
